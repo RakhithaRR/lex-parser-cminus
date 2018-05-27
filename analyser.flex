@@ -41,7 +41,8 @@ comment = "/*" [^*] ~"*/" | "/*" "*"+ "/"
 ")"                 {return RIGHT_PARANTHESE;}
 "["                 {return LEFT_BRACKET;}
 "]"                 {return RIGHT_BRACKET;}
-comment             {;}
+[ \t\r]+            {;}
+[\n]                {;}
 
 
 [a-zA-Z][a-zA-Z]*   {return ID;}
