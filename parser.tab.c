@@ -64,7 +64,7 @@
 /* Copy the first part of user declarations.  */
 #line 1 "parser.y" /* yacc.c:339  */
                                                                                    
-   #include <stdarg.h> 
+   #include <stdarg.h>
    #include "analyser_shared.h"                                                        
    #define YYSTYPE char *                                                            
    int yydebug=1;                                                                    

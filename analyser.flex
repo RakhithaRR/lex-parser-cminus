@@ -37,13 +37,13 @@ void yyerror (char const *s) {
 ")"                                       {return RIGHT_PARANTHESE;}
 "["                                       {return LEFT_BRACKET;}
 "]"                                       {return RIGHT_BRACKET;}
+
 [ \t\r]+                                  {;}
 [\n]                                      {;}
 [/][*]([^*]|\*+[^*/])*\*+"/"              {;}
 
-
-[a-zA-Z][a-zA-Z]*   {return ID;}
-[0-9][0-9]*         {return NUM;}
-
+[a-zA-Z][a-zA-Z]*                         {return ID;}
+[0-9][0-9]*                               {return NUM;}
+.                                         {return yytext[0];}
 %%
 

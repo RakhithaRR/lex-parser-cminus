@@ -1,5 +1,5 @@
 %{                                                                                   
-   #include <stdarg.h> 
+   #include <stdarg.h>
    #include "analyser_shared.h"                                                        
    #define YYSTYPE char *                                                            
    int yydebug=1;                                                                    
